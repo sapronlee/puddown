@@ -1,0 +1,14 @@
+defaults: &defaults
+  host: '127.0.0.1'
+  port: 6379
+  db: 0
+
+development:
+  <<: *defaults
+  namespace: puddown_development
+test:
+  <<: *defaults
+  namespace: puddown_test
+production:
+  <<: *defaults
+  namespace: puddown_production

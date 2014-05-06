@@ -1,0 +1,16 @@
+defaults: &defaults
+  host: 127.0.0.1:11211
+  pool_size: 16
+  compress: true
+  
+development:
+  <<: *defaults
+  namespace: 'puddown_development'
+
+test:
+  <<: *defaults
+  namespace: 'puddown_test'
+
+production:
+  <<: *defaults
+  namespace: 'puddown_production'
