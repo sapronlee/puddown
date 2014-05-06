@@ -63,5 +63,9 @@ end
 
 group :development, :test do
   gem 'pry-rails'
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+  gem 'database_cleaner'
 end
 
