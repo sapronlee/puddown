@@ -1,4 +1,4 @@
-class AssetsController < ActionController::Base
+class AssetsController < ApplicationController
   
   def index
   end

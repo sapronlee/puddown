@@ -1,3 +1,9 @@
+PudDown.Router.reopen
+  location: 'auto'
+
 PudDown.Router.map ()->
-  # @resource('posts')
+  @resource 'admin', ->
+    @resource 'adminPosts', { path: 'posts' }, ->
+      @route 'new'
+      @route 'edit', path: ':id/edit'
 

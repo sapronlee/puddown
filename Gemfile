@@ -35,7 +35,7 @@ gem 'puma'
 gem 'acts-as-taggable-on'
 
 # api
-gem 'rails-api'
+gem 'grape'
 
 # Redis
 gem 'redis'
