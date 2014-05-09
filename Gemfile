@@ -36,6 +36,7 @@ gem 'acts-as-taggable-on'
 
 # api
 gem 'grape'
+gem 'grape-entity'
 
 # Redis
 gem 'redis'
