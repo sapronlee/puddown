@@ -1,6 +1,8 @@
 # encoding: utf-8
 
 class RootAPI < Grape::API
+  use Middleware::Logger
+  
   prefix 'api'
   format :json
   default_format :json

@@ -1,7 +1,13 @@
 # encoding: utf-8
 
 module V1
-  module APIHelper
+  module APIHelpers
+    
+    extend Grape::API::Helpers
+    
+    params :access_token do
+      requires :access_token, type: String, desc: 'Access Token'
+    end
     
     def warden
       env['warden']
@@ -13,7 +19,7 @@ module V1
     end
     
     def authenticated!
-      error!(I18n.t('devise.failure.unauthenticated'), 401) unless authenticated?
+      error!(I18n.t('api.errors.token_invalid'), 401) unless authenticated?
     end
     
     def current_user

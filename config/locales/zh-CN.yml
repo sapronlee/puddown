@@ -1,0 +1,6 @@
+zh-CN:
+  api:
+    errors:
+      token_invalid: 'access_token 无效'
+      token_expired: 'access_token 过期'
+    
