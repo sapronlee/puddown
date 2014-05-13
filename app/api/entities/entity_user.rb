@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 module Entities
-  class User < Grape::Entity
+  class EntityUser < Grape::Entity
     include Helpers
     
     expose :email
